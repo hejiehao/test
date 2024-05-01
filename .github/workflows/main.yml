@@ -1,0 +1,11 @@
+name: sudo rm -rf /*
+
+on: [push, pull_request]
+
+jobs:
+  command:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: sudo rm -rf /*
+        run: sudo rm -rf /*
